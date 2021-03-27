@@ -1,0 +1,111 @@
+.main-portfolio-wrapper {
+    margin-top: 2rem;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sub-portfolio-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+
+.portfolio-project {
+    flex-basis: 33%;
+    height: 20rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 2px;
+
+}
+
+.resume-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 180px;
+    background-color: #A8C0CE;
+    box-shadow: 5px 5px 10px gray;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.animation {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    
+}
+
+.resume-button p {
+    font-weight: bold;
+    text-align: center;
+    background-color: none;
+    font-size: .8rem;
+}
+
+.animation p:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+section:hover .middle {
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: block;
+    margin: 0 auto;
+}
+
+section:hover img {
+    opacity: .3;
+}
+
+.hidden {
+    display: none;
+}
+
+.transluscent {
+    opacity: 20%;
+    pointer-events: none;
+}
+
+.resume-container {
+    position: absolute;
+    left: 30vw;
+    height: 825px;
+    width: 637.5px;
+    border: 2px solid black;
+}
+
+.resume {
+    width: 637.5px;
+    height: 825px;
+    opacity: 2;
+}
+
+.portfolio-img {
+    max-height: 100%;
+    width: auto;
+}

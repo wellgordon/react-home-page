@@ -1,0 +1,23 @@
+
+.about-main-container {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.about-sub-container {
+    display: flex;
+    flex-basis: 50%;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-main-body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+

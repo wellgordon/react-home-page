@@ -1,0 +1,36 @@
+.footer-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer-list-main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-list-sub {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    list-style: none;
+    font-size: .5rem;
+    text-decoration: none;
+}
+
+.footer-sub-li {
+    margin-right: .2rem;
+    margin-left: .2rem;
+}
+
+.footer-list a {
+    text-decoration: none;
+}
+
+.footer-icon {
+    height: 20px;
+    width: 20px;
+}
+

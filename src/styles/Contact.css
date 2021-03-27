@@ -1,0 +1,25 @@
+.contact-container {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.contact-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5rem;
+    
+}
+
+.contact-header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: #A8C0CE;
+}
+

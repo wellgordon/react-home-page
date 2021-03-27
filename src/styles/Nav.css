@@ -1,0 +1,29 @@
+li:hover {
+    cursor: pointer;
+    color: purple;
+}
+
+
+
+.nav-bar-sub {
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+.spacer-line {
+    border: 1px solid black;
+    width: 10px;
+    padding: 0;
+}
+
+.home-logo {
+    height: 10px;
+    width: 10px;
+}
