@@ -2,6 +2,7 @@ import './styles/Portfolio.css'
 import { useState } from 'react'
 import { Motion, spring } from 'react-motion'
 import placeholder from './_MG_7218.jpg'
+import placeholderOverlay from './hadOne.jpg'
 import resume from './Resume.pdf'
 
 
@@ -10,6 +11,12 @@ export default function PorfolioHome() {
     const [animation, setAnimation] = useState('animation')
     const [hiddenResume, setHiddenResume] = useState(true)
     const [transluscent, setTransluscent] = useState('')
+    const [placeholderImg, setPlaceholderImg] = useState({
+        '0': placeholder,
+        '1': placeholder,
+        '2': placeholder,
+        '3': placeholder,
+    })
 
     function handleOpen() {
         setAnimation('')
@@ -21,6 +28,13 @@ export default function PorfolioHome() {
         setHiddenResume(true)
         setAnimation('animation')
         setTransluscent('')
+    }
+
+    function handleImgChange(e) {
+        const id = e.target.id
+        //setPlaceholderImg(() => {
+        //     placeholderImg[id] = placeholderOverlay
+        // })
     }
 
     return (
@@ -45,16 +59,28 @@ export default function PorfolioHome() {
         <div className={`main-portfolio-wrapper ${transluscent}`}>
             <div className='sub-portfolio-wrapper'>
                 <section className='portfolio-project'>
-                    <img src={placeholder} alt='placeholder' class='portfolio-img'></img>
+                    <img src={placeholderImg[0]} alt='placeholder' class='portfolio-img'></img>
+                    <div className='portfolio-project-middle'>
+                        <p className='portfolio-project-middle-text' onClick={handleImgChange} id='0'>View Project</p>
+                    </div>
                 </section>
                 <section className='portfolio-project'>
-                    <img src={placeholder} alt='placeholder' class='portfolio-img'></img>
+                    <img src={placeholderImg[1]} alt='placeholder' class='portfolio-img' ></img>
+                    <div className='portfolio-project-middle'>
+                        <p className='portfolio-project-middle-text'>View Project</p>
+                    </div>
                 </section>
                 <section className='portfolio-project'>
-                    <img src={placeholder} alt='placeholder' class='portfolio-img'></img>
+                    <img src={placeholderImg[2]} alt='placeholder' class='portfolio-img'></img>
+                    <div className='portfolio-project-middle'>
+                        <p className='portfolio-project-middle-text'>View Project</p>
+                    </div>
                 </section>
                 <section className='portfolio-project'>
-                    <img src={placeholder} alt='placeholder' class='portfolio-img'></img>
+                    <img src={placeholderImg[3]} alt='placeholder' class='portfolio-img'></img>
+                    <div className='portfolio-project-middle'>
+                        <p className='portfolio-project-middle-text'>View Project</p>
+                    </div>
                 </section>
                 
             </div>

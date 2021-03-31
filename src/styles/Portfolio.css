@@ -19,7 +19,34 @@
     margin-bottom: 2rem;
     box-shadow: 5px 5px 10px gray;
     border-radius: 2px;
+    position: relative;
+    text-align: center;
+    transition: visibility 0s, opacity .5s linear;
+}
 
+.portfolio-project-middle {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.portfolio-project-middle-text {
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.portfolio-project-middle-text:hover {
+    cursor: pointer;
+}
+
+.portfolio-project:hover .portfolio-project-middle{
+    visibility: visible;
+    opacity: 1;
 }
 
 .resume-button {
