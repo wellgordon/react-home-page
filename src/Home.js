@@ -1,5 +1,5 @@
 import './styles/Home.css'
-import placeholder from './_MG_7218.7d7b0b15.jpg'
+import placeholder from './placeholder.jpg'
 
 
 export default function Home() {
