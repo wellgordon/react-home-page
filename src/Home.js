@@ -1,5 +1,5 @@
 import './styles/Home.css'
-import placeholder from '../react-home-page/src/_MG_7218.jpg'
+import placeholder from '../_MG_7218.jpg'
 
 
 export default function Home() {
